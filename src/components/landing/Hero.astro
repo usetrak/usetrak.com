@@ -1,18 +1,17 @@
 ---
-const advice = "";
-const advice_link = "";
+const advice = "🎉 v.0.0.4 Released!";
+const advice_link = "/devlog/v-0-0-4-launched";
 ---
 
 <section>
   <div
-    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 bg-gradient-to-r from-trakblu to-trakyellow md:from-trakblu md:to-trakgreen"
-  >
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 bg-gradient-to-r from-trakblu to-trakyellow md:from-trakblu md:to-trakgreen">
     <div>
       <div class="text-center max-w-4xl mx-auto">
         <div class="sm:flex sm:justify-center">
           {
             advice ? (
-              <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 bg-trakblu">
+              <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 bg-white hover:bg-trakblu border border-white hover:border hover:border-black">
                 <a href={advice_link} class="font-semibold text-black">
                   <span class="absolute inset-0" aria-hidden="true" />
                   <span class="block lg:inline">
@@ -25,8 +24,7 @@ const advice_link = "";
           }
         </div>
         <p
-          class="text-black mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight max-w-lg mx-auto"
-        >
+          class="text-black mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight max-w-lg mx-auto">
           A CLI to track the time you spend on projects
         </p>
         <p class="text-gray-800 lg:text-xl max-w-2xl mt-4 mx-auto text-base">

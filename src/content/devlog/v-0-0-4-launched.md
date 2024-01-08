@@ -1,7 +1,26 @@
 ---
 title: v.0.0.4 released
+description: Introducing you "works" and many quality life improvements
 tags: ["release"]
+date: 2024-01-08
 ---
+
+Hi, Luca here 👋.
+
+I'm excited to say that trak version 0.0.4 was released today.
+
+As you'll see in this post, there was no small amount of work.
+This, according to plan, should be the last major feature to be introduced to Trak for a while. From now on, there will only be added features that affect existing things—unless I get a stroke of genius or there's incredible feedback.
+
+As always after every big release, there could be bugs, typos, and so forth. The [issue section on GitHub](https://github.com/lcfd/trak/issues) is always open for reports.
+
+Also if you want to suggest something you can find me in the [discussion section](https://github.com/lcfd/trak/discussions) 😉.
+
+Thank you all for your patience and I hope to find you as soon as possible with new interesting developments and fixes!
+
+Bye,
+<br>
+Luca
 
 ## New concept: `work`
 
@@ -28,7 +47,7 @@ Note: The hours will be converted into minutes.
 
 A `work` will be stored like this:
 
-```
+```json
 [
   {
     "id": "test",
@@ -109,7 +128,7 @@ The intention is to avoid the creation of duplicates and confusion.
 
 Since the addition of `create` group of commands the `create` command in `projects` doesn't make sense anymore.
 
-### Dedicated folders to projects
+### Dedicated folders for projects
 
 Projects until v0.0.3 were stored in `config.json`.
 Every project now has a dedicated folder.

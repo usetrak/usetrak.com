@@ -6,12 +6,12 @@ import { AstroSeo } from "@astrolib/seo";
 
 <AstroSeo
   title="Docs"
-  description="Keep a record of the time you dedicate to your projects"
+  description="The documentation for trak."
   canonical="http://usetrak.com"
   openGraph={{
     url: "http://usetrak.com",
-    title: "Open Graph Title",
-    description: "Open Graph Description",
+    title: "Documentation",
+    description: "The documentation for trak.",
     images: [
       {
         url: "http://usetrak.com/opengraph/social-og.jpeg",
@@ -77,7 +77,9 @@ pipx install trakcli
 
 TBA
 
-### Local
+### Try the code in local
+
+If you want to try the latest unpublished changes you can install the code in repository directly in local by using poetry and pipx.
 
 Run `poetry build` and then
 
@@ -96,14 +98,21 @@ The CLI will guide you anyway through what you should and must do with messages 
 
 ### Basic commands
 
+To start using you can use those basic commands.
+They will create a project, run a session, get how is going, stop the session.
+
 ```bash
-trak start <project-name>
+# Create a project
+trak create project <project-id>
 
-trak stop
+# Start a session for a project
+trak start <project-id>
 
+# Check how the session is going on
 trak status
 
-trak report <project-name>
+# Stop the session
+trak stop
 ```
 
 Start trakking a project that is billable:
@@ -113,6 +122,8 @@ Start trakking a project that is billable:
 Start tracking a project on a specific category/topic:
 
 `trak start pasta -c rigatoni`
+
+### But there is a lot more than that
 
 All the commands are described in the help command:
 

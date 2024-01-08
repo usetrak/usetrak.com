@@ -2,8 +2,7 @@
   <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
     <div
       x-data="{ open: false }"
-      class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6"
-    >
+      class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6">
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a href="/" class="lg:pr-8 text-black inline-flex items-center gap-3">
           <span class="font-bold font-display">
@@ -12,14 +11,12 @@
         </a>
         <button
           @click="open = !open"
-          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden"
-        >
+          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden">
           <svg
             class="w-6 h-6"
             stroke="currentColor"
             fill="none"
-            viewBox="0 0 24 24"
-          >
+            viewBox="0 0 24 24">
             <path
               :class="{'hidden': open, 'inline-flex': !open }"
               class="inline-flex"
@@ -39,32 +36,32 @@
       </div>
       <nav
         :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
-      >
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400 lg:ml-auto"
-          href="/#features"
-        >
+          href="/#features">
           Features
         </a>
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-          href="/docs"
-        >
+          href="/docs">
           Docs
         </a>
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-          href="/faq"
-        >
+          href="/faq">
           Faq
+        </a>
+        <a
+          class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
+          href="/devlog">
+          Devlog
         </a>
         <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
           <a
             class="block px-4 py-2 mt-2 text-sm font-medium text-black md:mt-0 hover:text-accent-400 focus:outline-none focus:shadow-outline"
             target="_blank"
-            href="https://github.com/lcfd/trak"
-          >
+            href="https://github.com/lcfd/trak">
             On Github
           </a>
           {
