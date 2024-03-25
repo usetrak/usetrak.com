@@ -6,7 +6,7 @@ import Navigation from "../../components/global/Navigation.astro";
 import Footer from "../../components/global/Footer.astro";
 
 const allDevlogPosts = await getCollection("devlog");
-console.log(allDevlogPosts);
+allDevlogPosts.sort((a, b) => b.data.date - a.data.date);
 ---
 
 <AstroSeo
