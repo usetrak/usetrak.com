@@ -61,11 +61,11 @@ allDevlogPosts.sort((a, b) => b.data.date - a.data.date);
           </p>
         </div>
         <div class="mt-12 space-y-12 divide-y-2">
-          <div>
+          <div class="border-t">
             {
               allDevlogPosts.map((post) => (
                 <a
-                  class="block border shadow-sm rounded px-3 py-4 hover:bg-sky-50 transition-colors"
+                  class="block border-b px-3 py-4 hover:bg-sky-50 transition-colors"
                   href={`/devlog/${post.slug}`}>
                   {post.data.date.toLocaleDateString("it-IT", {
                     year: "numeric",

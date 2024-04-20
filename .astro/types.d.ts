@@ -143,9 +143,9 @@ declare module 'astro:content' {
   collection: "devlog";
   data: InferEntrySchema<"devlog">
 } & { render(): Render[".md"] };
-"v0.0.5 is on the way.md": {
-	id: "v0.0.5 is on the way.md";
-  slug: "v005-is-on-the-way";
+"v0.0.5 launched.md": {
+	id: "v0.0.5 launched.md";
+  slug: "v005-launched";
   body: string;
   collection: "devlog";
   data: InferEntrySchema<"devlog">
